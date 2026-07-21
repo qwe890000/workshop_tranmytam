@@ -60,9 +60,3 @@ Check AWS Console to ensure:
 ## Completion
 
 Congratulations on completing the **Deploy LunaGenZ on AWS Serverless** workshop!
-
----
-
-## Completion
-
-Congratulations on completing the **Deploy LunaGenZ on AWS Serverless** workshop!

@@ -8,7 +8,7 @@ pre: " <b> 3. </b> "
 
 ---
 
-This section will list and introduce the blogs you have translated.
+This section will list and introduce the blogs that have been translated.
 
 ---
 

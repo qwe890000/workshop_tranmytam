@@ -60,9 +60,3 @@ Kiểm tra AWS Console để đảm bảo:
 ## Hoàn thành
 
 Chúc mừng bạn đã hoàn thành workshop **Triển khai LunaGenZ trên AWS Serverless**!
-
----
-
-## Hoàn thành
-
-Chúc mừng bạn đã hoàn thành workshop **Triển khai LunaGenZ trên AWS Serverless**!
