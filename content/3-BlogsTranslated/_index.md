@@ -6,7 +6,7 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-# Translated Blogs
+---
 
 This section will list and introduce the blogs you have translated.
 
