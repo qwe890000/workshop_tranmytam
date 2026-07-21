@@ -1,4 +1,4 @@
----
+﻿---
 title: "Translated Blogs"
 date: 2024-01-01
 weight: 3
@@ -6,26 +6,24 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+# Translated Blogs
 
-This section will list and introduce the blogs you have translated. For example:
+This section will list and introduce the blogs you have translated.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+---
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 1 - Provision Oracle Database@AWS resources using Terraform](3.1-Blog1/)
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog guides you through automating the deployment of Oracle Database@AWS resources using Infrastructure as Code with Terraform. You will learn how to provision ODB Network, Oracle Exadata Infrastructure, Exadata VM Cluster, Autonomous VM Cluster, and ODB Peering Connection. The article focuses on applying Terraform to standardize processes, reduce manual errors, and accelerate Oracle infrastructure deployment on AWS.
 
-###  [Blog 4 - ...](3.4-Blog4/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+---
 
-###  [Blog 5 - ...](3.5-Blog5/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+### [Blog 2 - Cara pioneers domain-specific AI for enterprise insurance brokerages with AWS](3.2-Blog2/)
 
-###  [Blog 6 - ...](3.6-Blog6/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+This blog introduces how Cara built a domain-specific AI platform for enterprise insurance brokerages on AWS. The article analyzes the architecture using Amazon EKS and Amazon Bedrock, how to solve back-office automation challenges, data security, as well as real business results like time savings and increased operational efficiency.
+
+---
+
+### [Blog 3 - Building LunaGENZ – Personalized Numerology System on Serverless AWS with Generative AI](3.3-Blog3/)
+
+This article documents the team's process of building LunaGENZ – a system that uses AI to interpret personalized numerology – on serverless architecture (Next.js/Amplify, API Gateway, Lambda, DynamoDB). Content focuses on reasons for choosing serverless for cost optimization, how to handle AI timeout using Amazon SQS, reasons for choosing Claude 3 Haiku via Amazon Bedrock, along with security practices (Secrets Manager) and CI/CD.

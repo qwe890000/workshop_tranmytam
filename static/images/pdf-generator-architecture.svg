@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <!-- Background -->
+  <rect width="700" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="350" y="25" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">PDF Report Generation Flow</text>
+
+  <!-- Frontend -->
+  <rect x="50" y="80" width="100" height="50" rx="5" fill="#3b82f6"/>
+  <text x="100" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Frontend</text>
+  <text x="100" y="115" text-anchor="middle" fill="white" font-size="9">User Request</text>
+
+  <!-- Lambda PDF -->
+  <rect x="200" y="80" width="120" height="50" rx="5" fill="#ff9900"/>
+  <text x="260" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="bold">Lambda</text>
+  <text x="260" y="115" text-anchor="middle" fill="white" font-size="9">PDF Generator</text>
+
+  <!-- PDFKit -->
+  <rect x="380" y="80" width="100" height="50" rx="5" fill="#8b5cf6"/>
+  <text x="430" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="bold">PDFKit</text>
+  <text x="430" y="115" text-anchor="middle" fill="white" font-size="9">Library</text>
+
+  <!-- S3 Bucket -->
+  <rect x="530" y="80" width="120" height="50" rx="5" fill="#10b981"/>
+  <text x="590" y="100" text-anchor="middle" fill="white" font-size="11" font-weight="bold">S3 Bucket</text>
+  <text x="590" y="115" text-anchor="middle" fill="white" font-size="9">Reports</text>
+
+  <!-- PDF File Icon -->
+  <rect x="60" y="200" width="80" height="100" rx="3" fill="white" stroke="#ef4444" stroke-width="2"/>
+  <text x="100" y="230" text-anchor="middle" fill="#ef4444" font-size="24" font-weight="bold">PDF</text>
+  <text x="100" y="255" text-anchor="middle" fill="#64748b" font-size="9">Report.pdf</text>
+
+  <!-- Arrow from Lambda to PDFKit -->
+  <line x1="320" y1="105" x2="380" y2="105" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow from PDFKit to S3 -->
+  <line x1="480" y1="105" x2="530" y2="105" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Request Flow Box -->
+  <rect x="50" y="320" width="280" height="70" rx="5" fill="white" stroke="#e2e8f0"/>
+  <text x="190" y="338" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Generation Steps:</text>
+  <text x="65" y="355" font-size="9" fill="#64748b">1. Receive calculation data</text>
+  <text x="65" y="370" font-size="9" fill="#64748b">2. Create PDF document</text>
+  <text x="65" y="385" font-size="9" fill="#64748b">3. Add content & styling</text>
+
+  <!-- S3 Storage Box -->
+  <rect x="370" y="320" width="280" height="70" rx="5" fill="white" stroke="#e2e8f0"/>
+  <text x="510" y="338" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">S3 Storage:</text>
+  <text x="385" y="355" font-size="9" fill="#64748b">" Bucket: lunagenz-reports</text>
+  <text x="385" y="370" font-size="9" fill="#64748b">" Key: reports/{name}_{timestamp}.pdf</text>
+  <text x="385" y="385" font-size="9" fill="#64748b">" Signed URL (1 hour expiry)</text>
+
+  <!-- Download Path -->
+  <line x1="100" y1="300" x2="100" y2="200" stroke="#ef4444" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-red)"/>
+
+  <!-- User downloads PDF -->
+  <circle cx="100" cy="175" r="15" fill="#3b82f6"/>
+  <text x="100" y="179" text-anchor="middle" fill="white" font-size="9">“</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#ef4444"/>
+    </marker>
+  </defs>
+</svg>

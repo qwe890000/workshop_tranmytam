@@ -226,3 +226,10 @@ div.notices.info p {
   border-top: 30px solid #fd9827;
   background: #fff2db;
 }
+
+/* Đồng nhất style cho tất cả các mục trong sidebar */
+#sidebar ul.topics > li > ul > li > a {
+  background: transparent !important;
+  font-size: 14px !important;
+  color: #ddd !important;
+}

@@ -1,59 +1,33 @@
----
+﻿---
 title: "Worklog Tuần 3"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 3:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thành Module 01-Lab09 và Module 02-01, 02-02
+* Tìm hiểu AWS Support, VPC, Multi-VPC
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Hoàn thành Module 01-Lab09: Getting Help with AWS Support | 02/05/2026 | 02/05/2026 | <https://000009.awsstudygroup.com/> |
+| 3   | - Hoàn thành Module 02-01: VPC <br>&emsp; + Tạo VPC, Subnet, Internet Gateway <br>&emsp; + Route Table, NAT Gateway | 03/05/2026 | 03/05/2026 | <https://000003.awsstudygroup.com/> |
+| 4   | - Hoàn thành Module 02-02: Multi-VPC <br>&emsp; + VPC Peering <br>&emsp; + Transit Gateway | 04/05/2026 | 04/05/2026 | <https://000003.awsstudygroup.com/> <https://000092.awsstudygroup.com/> |
+| 5   | - Thực hành tạo VPC với các thành phần: <br>&emsp; + Public/Private Subnet <br>&emsp; + Security Group, NACL | 05/05/2026 | 06/05/2026 | <https://000003.awsstudygroup.com/> <https://000092.awsstudygroup.com/> |
+| 6   | - Thực hành kết nối Multi-VPC: <br>&emsp; + VPC Peering giữa các VPC <br>&emsp; + Transit Gateway | 07/05/2026 | 08/05/2026 | <https://000003.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 3:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành Module 01-Lab09 về AWS Support.
+* Nắm vững kiến thức VPC:
+  * Tạo VPC với Public/Private Subnet
+  * Cấu hình Internet Gateway, NAT Gateway
+  * Thiết lập Route Table
+* Hiểu và triển khai kiến trúc Multi-VPC:
+  * Kết nối VPC Peering giữa các VPC
+  * Sử dụng Transit Gateway để kết nối trung tâm
+* Áp dụng bảo mật với Security Group và NACL.

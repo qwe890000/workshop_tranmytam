@@ -1,33 +1,35 @@
----
+﻿---
 title: "Workshop"
-date: 2024-01-01
+date: 2026-01-01
 weight: 5
 chapter: false
-pre: " <b> 5. </b> "
+pre: " 5. "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
-# Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint
+# Triển khai LunaGenZ (Thần Số Học) trên AWS Serverless
 
 #### Tổng quan
 
-**AWS PrivateLink** cung cấp kết nối riêng tư đến các dịch vụ aws từ VPCs hoặc trung tâm dữ liệu (on-premise) mà không làm lộ lưu lượng truy cập ra ngoài public internet.
+**LunaGenZ** là một dự án Thần Số Học được xây dựng hoàn toàn trên kiến trúc AWS Serverless. Workshop này sẽ hướng dẫn toàn bộ quy trình triển khai logic Backend, tự động hóa việc tạo báo cáo PDF nội bộ, và host ứng dụng Frontend.
 
-Trong bài lab này, chúng ta sẽ học cách tạo, cấu hình, và kiểm tra VPC endpoints để cho phép workload của bạn tiếp cận các dịch vụ AWS mà không cần đi qua Internet công cộng.
-
-Chúng ta sẽ tạo hai loại endpoints để truy cập đến Amazon S3: gateway vpc endpoint và interface vpc endpoint. Hai loại vpc endpoints này mang đến nhiều lợi ích tùy thuộc vào việc bạn truy cập đến S3 từ môi trường cloud hay từ trung tâm dữ liệu (on-premise).
-+ **Gateway** - Tạo gateway endpoint để gửi lưu lượng đến Amazon S3 hoặc DynamoDB using private IP addresses. Bạn điều hướng lưu lượng từ VPC của bạn đến gateway endpoint bằng các bảng định tuyến (route tables)
-+ **Interface** - Tạo interface endpoint để gửi lưu lượng đến các dịch vụ điểm cuối (endpoints) sử dụng Network Load Balancer để phân phối lưu lượng. Lưu lượng dành cho dịch vụ điểm cuối được resolved bằng DNS.
+Trong bài lab này, chúng em đã thực hiện:
++ Xây dựng và triển khai Backend Serverless bằng AWS Lambda và API Gateway.
++ Tự động hóa quá trình sinh báo cáo PDF dựa trên các chỉ số Thần Số Học.
++ Host giao diện Frontend đảm bảo tính sẵn sàng cao trên Amazon S3 và Amazon CloudFront.
 
 #### Nội dung
 
-1. [Tổng quan về workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
-3. [Truy cập đến S3 từ VPC](5.3-S3-vpc/)
-4. [Truy cập đến S3 từ TTDL On-premises](5.4-S3-onprem/)
-5. [VPC Endpoint Policies (làm thêm)](5.5-Policy/)
-6. [Dọn dẹp tài nguyên](5.6-Cleanup/)
+1. [Tổng quan Workshop](5.1-overview/)
+2. [Chuẩn bị (Prerequisites)](5.2-prerequisites/)
+3. [Triển khai Backend (Lambda & API Gateway)](5.3-backend-lambda/)
+4. [Tự động sinh báo cáo PDF](5.4-create-pdf-report/)
+5. [Hosting Frontend (S3 & CloudFront)](5.5-hosting-frontend/)
+6. [Dọn dẹp tài nguyên (Clean up)](5.6-cleanup/)
+
+#### Sơ đồ kiến trúc
+
+![LunaGenZ Architecture](/images/lunagenz-architecture.svg)
+
+#### Liên kết
+
+- **Website:** [https://www.lunagenz.sbs/](https://www.lunagenz.sbs/)

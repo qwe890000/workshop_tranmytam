@@ -1,4 +1,4 @@
----
+﻿---
 title: "Events Participated"
 date: 2024-01-01
 weight: 4
@@ -6,39 +6,51 @@ chapter: false
 pre: " <b> 4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+In this section, you need to list and describe in detail the events you participated in during your internship or work.
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+Each event should be presented in the format Event 1, Event 2, Event 3..., along with the following information:
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+- ▸Event name
+- ▸Date and time
+- ▸Location (if applicable)
+- ▸Your role in the event (attendee, event support, speaker, etc.)
+- ▸Brief description of content and main activities in the event
+- ▸Results or value gained (lessons learned, new skills, contribution to team/project)
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+This listing helps demonstrate your actual participation as well as the soft skills and experience you accumulated through each event.
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+During my internship, I participated in 3 events, which were memorable experiences with new, interesting, and useful knowledge.
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+### Event 1
 
-&emsp;**Role:** Attendee  
+**Event Name:** FCAJ Community Day – Connect, Share & Real Tech Practice
+
+**Time:** 23/05/2026
+
+**Location:** 26th Floor, Bitexco Building, No. 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+**Role in the event:** Attendee
 
 ---
 
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
+### Event 2
 
-&emsp;**Date & Time:** 09:00, August 13, 2025  
+**Event Name:** Meeting 30/5
 
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
+**Time:** 30/5/2026
 
-&emsp;**Role:** Attendee  
+**Location:** 26th Floor, Bitexco Building, No. 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City
+
+**Role in the event:** Attendee
+
+---
+
+### Event 3
+
+**Event Name:** FCAJ Meetup 2026 – Journey from Student to Cloud, DevOps & Data Professional
+
+**Time:** 13/06/2026
+
+**Location:** Ho Chi Minh City
+
+**Role in the event:** Attendee

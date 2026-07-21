@@ -48,3 +48,10 @@ weight = 20
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_']
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']

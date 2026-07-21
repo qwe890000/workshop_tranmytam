@@ -1,59 +1,34 @@
----
+﻿---
 title: "Worklog Tuần 4"
 date: 2024-01-01
 weight: 1
 chapter: false
 pre: " <b> 1.4. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
-
 ### Mục tiêu tuần 4:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Hoàn thành Module 02-03 và Module 02-Lab03-01
+* Bắt đầu làm việc tại văn phòng công ty
 
 ### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Hoàn thành Module 02-03: Networking Essential <br>&emsp; + Route53 <br>&emsp; + Hybrid DNS | 09/05/2026 | 09/05/2026 | <https://000010.awsstudygroup.com/> |
+| 3   | - Hoàn thành Module 02-Lab03-01: VPC Resource Map | 10/05/2026 | 10/05/2026 | <https://000003.awsstudygroup.com/> |
+| 4   | - Bắt đầu làm việc tại văn phòng công ty <br>&emsp; + Onboard <br>&emsp; + Nhận tài khoản AWS | 11/05/2026 | 11/05/2026 |  |
+| 5   | - Làm việc tại công ty: <br>&emsp; + Thực hành VPC, Subnet, Security Group <br>&emsp; + Tạo EC2 Instance | 12/05/2026 | 13/05/2026 | <https://000003.awsstudygroup.com/> <https://000004.awsstudygroup.com/> |
+| 6   | - Tiếp tục thực hành tại công ty: <br>&emsp; + Tạo IAM Role, IAM User <br>&emsp; + Cấu hình AWS CLI trên EC2 | 14/05/2026 | 15/05/2026 | <https://000002.awsstudygroup.com/> <https://000048.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 4:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+* Hoàn thành Module 02-03 về Networking Essential:
+  * Hiểu về Route53 và Hybrid DNS
+  * Cấu hình DNS resolution giữa on-premises và AWS
+* Hoàn thành Module 02-Lab03-01: VPC Resource Map.
+* Bắt đầu làm việc tại văn phòng công ty AWS Vietnam:
+  * Hoàn thành quá trình onboard
+  * Nhận tài khoản AWS từ công ty
+* Thực hành tạo VPC, Subnet, Security Group tại môi trường công ty.
+* Tạo và quản lý EC2 Instance.
+* Cấu hình IAM Role, IAM User và AWS CLI trên EC2.
