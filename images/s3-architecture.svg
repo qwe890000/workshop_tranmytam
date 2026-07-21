@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400">
+  <!-- Background -->
+  <rect width="700" height="400" fill="#f8fafc"/>
+
+  <!-- Title -->
+  <text x="350" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold" fill="#1e293b">S3 Static Website Hosting Flow</text>
+
+  <!-- User -->
+  <circle cx="100" cy="200" r="25" fill="#3b82f6"/>
+  <text x="100" y="205" text-anchor="middle" fill="white" font-size="11">User</text>
+
+  <!-- CloudFront -->
+  <rect x="200" y="170" width="120" height="60" rx="5" fill="#ff9900"/>
+  <text x="260" y="195" text-anchor="middle" fill="white" font-size="12" font-weight="bold">CloudFront</text>
+  <text x="260" y="210" text-anchor="middle" fill="white" font-size="9">Edge Locations</text>
+
+  <!-- S3 Bucket -->
+  <rect x="380" y="170" width="120" height="60" rx="5" fill="#3b82f6"/>
+  <text x="440" y="195" text-anchor="middle" fill="white" font-size="12" font-weight="bold">S3 Bucket</text>
+  <text x="440" y="210" text-anchor="middle" fill="white" font-size="9">Static Content</text>
+
+  <!-- Origin Shield (optional) -->
+  <rect x="540" y="170" width="100" height="60" rx="5" fill="#10b981" opacity="0.8"/>
+  <text x="590" y="195" text-anchor="middle" fill="white" font-size="10" font-weight="bold">Origin Shield</text>
+  <text x="590" y="210" text-anchor="middle" fill="white" font-size="8">(Optional)</text>
+
+  <!-- Steps -->
+  <rect x="50" y="280" width="250" height="100" rx="5" fill="white" stroke="#e2e8f0"/>
+  <text x="175" y="300" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Steps:</text>
+  <text x="65" y="320" font-size="9" fill="#64748b">1. User requests website URL</text>
+  <text x="65" y="335" font-size="9" fill="#64748b">2. CloudFront checks cache</text>
+  <text x="65" y="350" font-size="9" fill="#64748b">3. If miss ’ fetch from S3</text>
+  <text x="65" y="365" font-size="9" fill="#64748b">4. Cache at edge location</text>
+
+  <!-- Security badges -->
+  <rect x="350" y="280" width="150" height="100" rx="5" fill="white" stroke="#e2e8f0"/>
+  <text x="425" y="300" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">Security</text>
+  <text x="365" y="320" font-size="9" fill="#64748b"> HTTPS enforced</text>
+  <text x="365" y="335" font-size="9" fill="#64748b"> WAF protection</text>
+  <text x="365" y="350" font-size="9" fill="#64748b"> DDoS mitigation</text>
+  <text x="365" y="365" font-size="9" fill="#64748b"> Geo-restriction (opt)</text>
+
+  <!-- Arrow User to CloudFront -->
+  <line x1="125" y1="200" x2="200" y2="200" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="162" y="190" text-anchor="middle" font-size="8" fill="#64748b">1. Request</text>
+
+  <!-- Arrow CloudFront to S3 -->
+  <line x1="320" y1="200" x2="380" y2="200" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="350" y="190" text-anchor="middle" font-size="8" fill="#64748b">2. Origin</text>
+
+  <!-- Arrow CloudFront to Origin Shield -->
+  <line x1="500" y1="200" x2="540" y2="200" stroke="#64748b" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="520" y="190" text-anchor="middle" font-size="8" fill="#64748b">opt</text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
